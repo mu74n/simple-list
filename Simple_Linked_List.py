@@ -9,7 +9,6 @@ class Linked_List:
     def __init__(self):
         self.first = None
         self.size = 0
-
     def append(self,element):
         new = Node(element)
         if self.size == 0 :
@@ -21,7 +20,6 @@ class Linked_List:
             temp.next = new
         self.size += 1
         return new.element
-
     def remove (self,value):
         try:
             if self.size == 0:
@@ -40,8 +38,6 @@ class Linked_List:
                 return del_node + " has been removed"
         except AttributeError:
             return False
-        
-
     def __len__(self):
         return self.size
     def __str__(self):
